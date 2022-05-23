@@ -1,4 +1,6 @@
 import csv
+
+
 with open('data/daily_sales_data_0.csv', 'r') as inp, open('data/daily_sales_data_comb.csv', 'w') as out: #'w' to create daily_sales_data_comb
     writer = csv.writer(out)
     for row in csv.reader(inp):
